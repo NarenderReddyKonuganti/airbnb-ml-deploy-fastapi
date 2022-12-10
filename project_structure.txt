@@ -1,0 +1,31 @@
+├── @Author  : Narender Reddy Konuganti - Data Engineer 
+├── LICENSE
+├── README.md                      <- The top-level README for developers using this project.
+│
+├── data                           <- The folder containing the original data 
+│   ├── *.csv
+│
+├── models                         <- Databricks notebook containing the ETL and ML code
+│   ├── LRM.sav
+│
+├── vectors                        <- Trained and serialized vector
+│   ├── vectorizer.pkl  
+│
+├── docker                         <- folder containing the docker files
+│   ├── Dockerfile            
+│
+├── packages                       <- The customized project packages containing utility functions 
+│   
+├── requirements.txt               <- The requirements file for reproducing the analysis environment, e.g.
+│                                       generated with `pip freeze > requirements.txt`
+│
+├── app.py                         <- The final Rest API file
+
+
+
+
+
+
+
+
+
