@@ -11,7 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ./app.py ./
 
 # Copy the serialized model and the vectors
-COPY ./models/spam_detector_model.pkl ./models/spam_detector_model.pkl
-COPY ./vectors/vectorizer.pickle ./vectors/vectorizer.pickle
+COPY ./models/LRM.sav ./models/LRM.sav
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
