@@ -29,7 +29,7 @@ def root():
 
 # Make a prediction based on the user-entered data
 # Returns the predicted price with its respective probability
-def predict_species(host_is_superhost,accommodates, bedrooms, beds, bathrooms, number_of_reviews):
+def predict_price(host_is_superhost,accommodates, bedrooms, beds, bathrooms, number_of_reviews):
     data_in = [[host_is_superhost,accommodates, bedrooms, beds, bathrooms, number_of_reviews]]
     prediction = model.predict(data_in)
     return prediction[0]
