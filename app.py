@@ -4,7 +4,7 @@ from joblib import load
 import pickle
 
 # Load the model
-model = pickle.load(open('LRM.sav', 'rb'))
+model = pickle.load(open('models/LRM.sav', 'rb'))
 
 # Initialize an instance of FastAPI
 app = FastAPI()
