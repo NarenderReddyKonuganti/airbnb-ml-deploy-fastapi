@@ -2,6 +2,7 @@
 from fastapi import FastAPI, HTTPException
 from joblib import load
 import pickle
+from pydantic import BaseModel
 
 # Load the model
 model = pickle.load(open('models/LRM.sav', 'rb'))
