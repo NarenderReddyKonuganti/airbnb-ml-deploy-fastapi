@@ -4,7 +4,10 @@ FastAPI is a modern, fast (high-performance), web framework for building APIs wi
 
 ## Implementation
 
-Objective is to create an API endpoint for "sentiment classification model", which aims to predict if a given text message is spam or ham.
+The goal here is to serve a dynamic price prediction model, which aims to predict the price based on input parameters like bedrooms, accommodates etc.,
+
+Objective is to create the API on the trained ML model.
+
 
 ## Contents
 
@@ -27,8 +30,9 @@ Objective is to create an API endpoint for "sentiment classification model", whi
 
 **Step 1: Building the API**
 
-* Client sends a request to the uvicorn server which interacts with the API to trigger the prediction model.
-* The model returns the polarity (spam or ham), and the result is shown to the user in a JSON format.
+* Client sends a request to the server which interacts with the API to trigger the prediction model.
+* The model returns the outcome (price), and the result is shown to the user.
+
 
 **Step 2: Deploying into Docker**
 
@@ -51,9 +55,11 @@ Objective is to create an API endpoint for "sentiment classification model", whi
 
 3. Define the endpoints of the API. In our case, it will have two routes as shown below.
 
-**default route "/”:** which simply returns the following JSON format “message”: “Welcome to Your Sentiment Classification FastAPI” through the root() function which does not take a parameter.
+**default route "/”:** which simply returns the following JSON format “message”: “Welcome to Your Airbnb Dynamic Price Predictor FastAPI” through the root() function which does not take a parameter.
 
-**the prediction route "/predict_sentiment":** this one triggers the predict_sentiment() function, which takes as a parameter, the user’s message, and returns the JSON response at the format defined from lines 19 to 22. The sentiment polarity is the prediction of the model.
+
+**the prediction route "/predict_price":** this one triggers the predict_price() function, which takes as a parameter, the user’s message, and returns the JSON response at the format defined from lines 32 to 35. The price of Airbnb listing is the prediction of the model.
+
 
 We can finally run it (the API) with the following instruction from our command line, from the location of the app.y file.
 
